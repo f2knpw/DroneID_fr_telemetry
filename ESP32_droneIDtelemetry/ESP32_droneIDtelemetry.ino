@@ -232,14 +232,14 @@ void loop()
           }
           else
           {
-            //{"RTC":1693769182, "lat":435128245, "lon":14970095, "GSpd":0, "Hdg":193.33999633789, "GAlt":183.60000610352}
+            //{"RTC":1693769182, "lat":43.5000000, "lon":1.4900000, "GSpd":0, "Hdg":193.33999633789, "GAlt":183.60000610352}
 
             // Fetch values
             modeOTA = doc["OTA"];
             lat =  doc["lat"]  ;
-            lat = lat / 10000000.;
+            //lat = lat / 10000000.; //no longer needed
             lon =  doc["lon"]  ;
-            lon = lon / 10000000.;
+            //lon = lon / 10000000.; //no longer needed
             GSpd = doc["GSpd"]  ;
             Hdg = doc["Hdg"]  ;
             GAlt = doc["GAlt"];
